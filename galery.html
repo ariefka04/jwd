@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* CSS untuk membuat iframe menjadi center dan responsive dalam satu baris */
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem; /* Jarak antar video */
+        }
+
+        .video-container iframe {
+            max-width: 100%;
+            height: 240px;
+        }
+
+        .video-description {
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .back-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Gallery Video</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 video-container">
+                <iframe width="720" height="450" src="https://www.youtube.com/embed/MZQnihAuKp0" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-description">Gunung Trikora</div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 video-container">
+                <iframe width="720" height="450" src="https://www.youtube.com/embed/l5pWNhw6FDA" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-description">Gunung Jayawijaya</div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 video-container">
+                <iframe width="720" height="450" src="https://www.youtube.com/embed/pdZA_WBbPws" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-description">Gunung Cartenz</div>
+            </div>
+        </div>
+        <div class="back-button">
+            <a href="index.php" class="btn btn-primary">Kembali ke Beranda</a>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
